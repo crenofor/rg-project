@@ -1,0 +1,190 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Corpo */
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+/* Header */
+header {
+  background: #222;
+  color: #fff;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+
+nav a:hover {
+  color:#1450e9;
+}
+
+
+/* Banner */
+.banner {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0f0e0d, #080808);
+  color: white;
+}
+
+
+.banner h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+/* Produtos */
+.produtos {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.produtos h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  color: #222;
+}
+
+
+.grade-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+
+.produto {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+
+.produto:hover {
+  transform: translateY(-5px);
+}
+
+
+.produto img {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+
+.produto h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+
+.produto p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+
+/* Botões */
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #000000;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+
+button:hover {
+  background: #1450e9;
+}
+
+
+/* Destaques */
+.destaques {
+  text-align:2;
+  padding: 40px 20px;
+  background: #f9f9f9;
+}
+
+
+.destaques h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #222;
+  border-bottom: 3px solid #271e18;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+
+.destaques h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #444;
+  font-weight: normal;
+}
+
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #fff;
+  margin-top: 40px;
+}
