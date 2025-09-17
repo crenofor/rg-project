@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar em RGsports</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<header>
+    <div class="container">
+        <a href="#"><img src="img/SPORTS-Photoroom.png" alt="Logo do site" class="logo"></a>
+    </div>
+</header>
+
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <label for="visible-username">Informe seu E-mail</label>
+            <input type="email" id="email" onchange="validateFields()" placeholder="E-mail" required>
+            <label for="password">Informe sua Senha</label>
+            <input type="password" id="password" onchange="validateFields()" placeholder="Senha" required>
+            <p id="recover-password-button"><a id="recover-password-button" href="#">Esqueci minha senha</a></p>
+            <button type="submit" id="login-button">Entrar</button>
+        </form>
+        <p>Não tem conta? <a href="#">Cadastre-se</a></p>
+    </div>
+</body>
+
+</html>
