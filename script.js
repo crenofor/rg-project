@@ -1,25 +1,13 @@
-function validateFields() {
-    const emailValid = isEmailValid();
-    const passwordValid = isPasswordValid();
-    document.getElementById('login-button').disabaled = !emailValid || !passwordValid;
-}
+function validarEmail() {
+    let email = document.getElementById("email").value;
+    let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let resultado = document.getElementById("resultado");
 
-function isEmailValid() {
-    const email = document.getElementById("email").value;
-    if (!email) {
-        return false;
+    if(regex.test(email)) {
+        resultado.innerText = "E-mail válido!";
+        resultado.style.color = "green";
+    } else {
+        resultado.innerText = "E-mail inválido!";
+        resultado.style.color = "red";
     }
-    return validateEmail(email);
-}
-
-function isPasswordValid() {
-    const password = document.getElementById('password').value;
-    if (!password) {
-        return false;
-    }
-    return false;
-}
-
-function validateEmail(email) {
-    return /\S+@\S+\.\S+/.test(email);
 }

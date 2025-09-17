@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -17,13 +17,14 @@
 <body>
     <div class="login-container">
         <h2>Login</h2>
-        <form>
+        <form id="loginForm">
             <label for="visible-username">Informe seu E-mail</label>
-            <input type="email" id="email" onchange="validateFields()" placeholder="E-mail" required>
+            <input type="email" id="email" placeholder="E-mail" required>
+            <p id="resultado"></p>
             <label for="password">Informe sua Senha</label>
-            <input type="password" id="password" onchange="validateFields()" placeholder="Senha" required>
+            <input type="password" id="password" placeholder="Senha" required>
             <p id="recover-password-button"><a id="recover-password-button" href="#">Esqueci minha senha</a></p>
-            <button type="submit" id="login-button">Entrar</button>
+            <button type="submit" onclick="validarEmail()">Entrar</button>
         </form>
         <p>Não tem conta? <a href="#">Cadastre-se</a></p>
     </div>
